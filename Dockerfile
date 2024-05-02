@@ -1,1 +1,1 @@
-FROM 
+FROM golang:latest
