@@ -22,22 +22,27 @@ func main() {
 
 	var hobbies = [3]string{"Programming", "Gaming", "Reading"}
 
-	fmt.Println(hobbies)
-	fmt.Println(hobbies[0])
-	fmt.Println(hobbies[1],hobbies[2])
-	firstFirstSlice := hobbies[0:2]
-	firstSecondSlice := hobbies[0:1]
-	secondSecondSlice := hobbies[1:2]
+	for i := 0; i < len(hobbies); i += 1 {
+		fmt.Println(hobbies[i])
+	}
 
-	fmt.Println(firstFirstSlice)
-	fmt.Println(firstSecondSlice, secondSecondSlice)
 
-	firstFirstSlice = firstFirstSlice[1:3]
-	fmt.Println(firstFirstSlice)
+	// fmt.Println(hobbies)
+	// fmt.Println(hobbies[0])
+	// fmt.Println(hobbies[1],hobbies[2])
+	// firstFirstSlice := hobbies[0:2]
+	// firstSecondSlice := hobbies[0:1]
+	// secondSecondSlice := hobbies[1:2]
+
+	// fmt.Println(firstFirstSlice)
+	// fmt.Println(firstSecondSlice, secondSecondSlice)
+
+	// firstFirstSlice = firstFirstSlice[1:3]
+	// fmt.Println(firstFirstSlice)
 	
 
-	myProducts := []products{{title: "Cakes", price: 22.22, description: "This is a great cake"},
-	{title: "Grokking Algorithms", price: 21.22, description: "This is a great book"}}
+	// myProducts := []products{{title: "Cakes", price: 22.22, description: "This is a great cake"},
+	// {title: "Grokking Algorithms", price: 21.22, description: "This is a great book"}}
 	
-	fmt.Print(myProducts)
+	// fmt.Print(myProducts)
 }
